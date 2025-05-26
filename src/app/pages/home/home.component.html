@@ -1,0 +1,11 @@
+<div>
+    <h1 class="display-4 text-center py-5">Todays Deals</h1>
+</div>
+<div class="row">
+    @for(product of products;track product.id){
+        <div class="col-md-4">
+            <app-card [product]="product"></app-card>
+        </div>
+    }
+
+</div>
